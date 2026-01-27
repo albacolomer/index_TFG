@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informes - TFG Dossier</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header amb navegació -->
+    <header>
+        <nav>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul id="nav-menu">
+                <li><a href="index.html">Inici</a></li>
+                <li><a href="resum.html">Resum</a></li>
+                <li><a href="recursos.html">Recursos</a></li>
+                <li><a href="informes.html" class="active">Informes</a></li>
+                <li><a href="demo.html">Demo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contingut principal -->
+    <main>
+        <div class="page-title">
+            <h1>Informes del Projecte</h1>
+            <p>Documentació i seguiment del Treball de Fi de Grau</p>
+        </div>
+
+        <!-- Llista d'informes -->
+        <section>
+            <article class="report-item">
+                <div class="report-icon">📝</div>
+                <div class="report-content">
+                    <h3>Informe Inicial</h3>
+                    <p>
+                        Aquest informe presenta el context i la motivació del projecte, centrats en la necessitat de donar suport al comerç local davant el creixement del consum digital. S’hi defineixen els objectius generals i específics, es revisen solucions similars existents i s’especifica l’abast del sistema mitjançant els requisits funcionals, no funcionals i tècnics.
+                        <br>
+                        També s’hi descriu la metodologia àgil utilitzada, la planificació inicial per fases, l’estimació de costos i riscos, i les eines tecnològiques previstes per al desenvolupament de l’aplicació mòbil.
+                    </p>
+                    <a href="Documents/TFG-Informe-Inicial-AlbaColomer (2).pdf" class="btn btn-primary" target="_blank">Obrir PDF</a>
+                </div>
+            </article>
+
+            <article class="report-item">
+                <div class="report-icon">📊</div>
+                <div class="report-content">
+                    <h3>Informe de Progrés I</h3>
+                    <p>
+                        En aquest primer seguiment es descriu l’evolució del projecte després de la fase inicial, destacant l’ampliació de la fase de disseny UX/UI i de definició de requisits.
+                        <br>
+                        S’hi presenten els primers ajustos en la planificació, la incorporació del rol d’administrador, l’estat dels objectius i l’arquitectura funcional del sistema. També s’actualitzen els costos, els riscos i el calendari, consolidant una base sòlida abans d’iniciar el desenvolupament tècnic.
+                    </p>
+                    <a href="Documents/TFG-Informe-Progres-1-AlbaColomer (1).pdf" class="btn btn-primary" target="_blank">Obrir PDF</a>
+                </div>
+            </article>
+
+            <article class="report-item">
+                <div class="report-icon">📈</div>
+                <div class="report-content">
+                    <h3>Informe de Progrés II</h3>
+                    <p>
+                       Aquest informe reflecteix el pas a la fase d’implementació tècnica del projecte. S’hi detalla el desenvolupament de la primera iteració del MVP, centrada en el sistema d’autenticació, la gestió d’usuaris i la integració amb Firebase.
+                       <br>
+                       També s’analitza l’estat d’assoliment dels objectius, els canvis en la priorització de requisits, els ajustos en la planificació i els principals reptes tècnics. Finalment, es descriu l’arquitectura frontend i backend i les eines utilitzades.
+                    </p>
+                    <a href="Documents/TFG-Informe-Progres-2-AlbaColomer.pdf" class="btn btn-primary" target="_blank">Obrir PDF</a>
+                </div>
+            </article>
+
+            <article class="report-item">
+                <div class="report-icon">✅</div>
+                <div class="report-content">
+                    <h3>Informe Final</h3>
+                    <p>
+                        L’informe final recull tot el procés de desenvolupament del TFG, des de la motivació inicial fins a la validació del producte final. S’hi consoliden els objectius assolits, l’arquitectura definitiva, el disseny UX/UI, els casos d’ús, els requisits prioritzats i la planificació final.
+                        <br>
+                        A més, es presenten els resultats obtinguts amb el MVP, les conclusions, les limitacions detectades i les possibles línies de millora futura, deixant establerta una base sòlida per a l’evolució de l’aplicació.
+                    </p>
+                    <a href="Documents/TFG-Informe-Final-AlbaColomer.pdf" class="btn btn-primary" target="_blank">Obrir PDF</a>
+                </div>
+            </article>
+        </section>
+
+        <!-- Llista de Canvis -->
+        <section class="changelog">
+            <h2>Llista de Canvis</h2>
+            <p class="mb-20">Registre dels canvis realitzats als documents segons els comentaris del tutor en cada reunió.</p>
+
+            <table class="changelog-table">
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Document</th>
+                        <th>Canvi Realitzat</th>
+                        <th>Comentari del Tutor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>29/09/2025</td>
+                        <td>Informe Inicial</td>
+                        <td>Creació d’una taula de prioritats de requeriments (inclosa a l’annex) per classificar-los segons importància i impacte.</td>
+                        <td>Cal prioritzar els requeriments mitjançant una taula.</td>
+                    </tr>
+                    <tr>
+                        <td>29/09/2025</td>
+                        <td>Informe Inicial</td>
+                        <td>Reclassificació dels RNF-01, RNF-04 i RNF-06 com a requeriments tècnics en lloc de requeriments funcionals.</td>
+                        <td>Aquests requeriments corresponen a aspectes tècnics (API, Flutter i escalabilitat).</td>
+                    </tr>
+                    <tr>
+                        <td>29/09/2025</td>
+                        <td>Informe Inicial</td>
+                        <td>Ampliació de la planificació amb la definició d’iteracions, especificant objectius, tasques, validacions i durada de cadascuna.</td>
+                        <td>Cal detallar les iteracions com a una planificació com les de l'assignatura GDS.</td>
+                    </tr>
+                    <tr>
+                        <td>29/09/2025</td>
+                        <td>Informe Inicial</td>
+                        <td>Càlcul dels costos del projecte per perfil professional i costos tècnics.</td>
+                        <td>Cal afegir una estimació de costos humans i tècnics.</td>
+                    </tr>
+                    <tr>
+                        <td>29/09/2025</td>
+                        <td>Informe Inicial</td>
+                        <td>Incorporació d’un apartat específic de riscos associats al projecte.</td>
+                        <td>Afegir l’anàlisi de riscos.</td>
+                    </tr>
+                    <tr>
+                        <td>29/09/2025</td>
+                        <td>Informe Inicial</td>
+                        <td>Ampliació de la bibliografia amb nous enllaços i un breu resum explicatiu del contingut de cada font.</td>
+                        <td>La bibliografia ha d’explicar què aporta cada referència i incloure més fonts.</td>
+                    </tr>
+                    <tr>
+                        <td>03/10/2025</td>
+                        <td>Informe Inicial</td>
+                        <td>Afegir a l’annex la planificació detallada i una proposta d’estructura d’informació del sistema.</td>
+                        <td>Incloure documentació ampliada a l’annex.</td>
+                    </tr>
+                    <tr>
+                        <td>13/11/2025</td>
+                        <td>Informe de progrés 1</td>
+                        <td>Afegir l’abstract en castellà per disposar de la introducció en tres llengües.</td>
+                        <td>Incloure també l’abstract en castellà.</td>
+                    </tr>
+                    <tr>
+                        <td>13/11/2025</td>
+                        <td>Informe de progrés 1</td>
+                        <td>Creació d’un apartat de test amb la descripció de les proves i validacions realitzades.</td>
+                        <td>Afegir un apartat de proves</td>
+                    </tr>
+                    <tr>
+                        <td>22/01/2026</td>
+                        <td>Informe Final</td>
+                        <td>Revisió i formateig complet de l’annex per millorar la presentació i coherència.</td>
+                        <td>Acabar de formatejar l’annex.</td>
+                    </tr>
+                    <tr>
+                        <td>22/01/2026</td>
+                        <td>Informe Final</td>
+                        <td>Afegir un índex de figures i ajustar l’estructura del document.</td>
+                        <td>Incloure un índex de figures i ajustar el format..</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>TFG Dossier - Alba Colomer © 2025</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

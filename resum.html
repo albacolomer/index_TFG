@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resum - TFG Dossier</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header amb navegació -->
+    <header>
+        <nav>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul id="nav-menu">
+                <li><a href="index.html">Inici</a></li>
+                <li><a href="resum.html" class="active">Resum</a></li>
+                <li><a href="recursos.html">Recursos</a></li>
+                <li><a href="informes.html">Informes</a></li>
+                <li><a href="demo.html">Demo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contingut principal -->
+    <main>
+        <div class="page-title">
+            <h1>Resum del Projecte</h1>
+        </div>
+
+        <!-- Selector d'idioma -->
+        <div class="language-selector">
+            <button class="lang-btn active" onclick="changeLanguage('ca')">Català</button>
+            <button class="lang-btn" onclick="changeLanguage('es')">Español</button>
+            <button class="lang-btn" onclick="changeLanguage('en')">English</button>
+        </div>
+
+        <!-- Contingut en Català -->
+        <div id="lang-ca" class="lang-content active">
+            <div class="card">
+                <h2>Resum (Català)</h2>
+                <!-- PLACEHOLDER: Substitueix aquest text pel resum en català -->
+                <p>
+                    El comerç local afronta el repte d’adaptar-se a uns hàbits de consum cada vegada més digitals, on les grans plataformes de venda online marquen la tendència per la seva rapidesa i comoditat. Tot i que s’han creat iniciatives per donar visibilitat als establiments de proximitat, moltes d’aquestes solucions estan centrades en sectors molt concrets o en àmbits territorials limitats, i sovint no responen a les necessitats reals de comerciants i clients.
+                    <br><br>
+                    Per donar resposta a aquesta situació, aquest projecte planteja el desenvolupament d’una aplicació mòbil multiplataforma amb Flutter que connecti clients, comerços i associacions en un únic espai digital. L’app oferirà als usuaris la possibilitat de localitzar establiments en un mapa interactiu amb Google Maps, explorar productes i promocions, i compartir ressenyes que ajudin a generar confiança. Paral·lelament, proporcionarà als comerciants eines per gestionar el seu negoci i a les associacions l’oportunitat de llançar campanyes conjuntes
+                    <br><br>
+                    L’objectiu final és crear un MVP funcional, intuïtiu i escalable que impulsi el comerç de proximitat i obri la porta a futures millores com la compra online o la gestió logística.
+                </p>
+            </div>
+        </div>
+
+        <!-- Contingut en Castellà -->
+        <div id="lang-es" class="lang-content">
+            <div class="card">
+                <h2>Resumen (Español)</h2>
+                <!-- PLACEHOLDER: Substitueix aquest text pel resum en castellà -->
+                <p>
+                    El comercio local se enfrenta al reto de adaptarse a unos hábitos de consumo cada vez más digitales, donde las grandes plataformas de venta online marcan la tendencia por su rapidez y comodidad. Aunque se han creado iniciativas para dar visibilidad a los establecimientos de proximidad, muchas de estas soluciones están centradas en sectores muy concretos o en ámbitos territoriales limitados, y a menudo no responden a las necesidades reales de comerciantes y clientes.
+                    <br><br>
+                    Para dar respuesta a esta situación, este proyecto plantea el desarrollo de una aplicación móvil multiplataforma con Flutter que conecte clientes, comercios y asociaciones en un único espacio digital. La app ofrecerá a los usuarios la posibilidad de localizar establecimientos en un mapa interactivo con Google Maps, explorar productos y promociones, y compartir reseñas que ayuden a generar confianza. Paralelamente, proporcionará a los comerciantes herramientas para gestionar su negocio y a las asociaciones la oportunidad de lanzar campañas conjuntas.
+                    <br><br>
+                    El objetivo final es crear un MVP funcional, intuitivo y escalable que impulse el comercio de proximidad y abra la puerta a futuras mejoras como la compra online o la gestión logística.
+                </p>
+                    
+            </div>
+        </div>
+
+        <!-- Contingut en Anglès -->
+        <div id="lang-en" class="lang-content">
+            <div class="card">
+                <h2>Summary (English)</h2>
+                <!-- PLACEHOLDER: Substitueix aquest text pel resum en anglès -->
+                <p>
+                    Local commerce is currently facing the challenge of adapting to increasingly digital consumer habits, where large online sales platforms dominate thanks to their speed and convenience. Although several initiatives have been launched to promote local businesses, many of these solutions are focused on very specific sectors or limited geographical areas, and often fail to meet the real needs of both merchants and customers.
+                    <br><br>
+                    To address this situation, this project proposes the development of a cross-platform mobile application built with Flutter that connects customers, merchants, and trade associations within a single digital space. The app will allow users to locate stores on an interactive map powered by Google Maps, explore products and promotions, and share reviews that foster trust. At the same time, it will provide merchants with tools to manage their business and give associations the ability to launch joint campaigns.
+                    <br><br>
+                    The ultimate goal is to deliver a functional, intuitive, and scalable MVP that strengthens local commerce and paves the way for future enhancements such as online shopping and logistics management.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>TFG Dossier - Alba Colomer © 2025</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

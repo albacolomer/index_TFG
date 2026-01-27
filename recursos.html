@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursos - TFG Dossier</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header amb navegació -->
+    <header>
+        <nav>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul id="nav-menu">
+                <li><a href="index.html">Inici</a></li>
+                <li><a href="resum.html">Resum</a></li>
+                <li><a href="recursos.html" class="active">Recursos</a></li>
+                <li><a href="informes.html">Informes</a></li>
+                <li><a href="demo.html">Demo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contingut principal -->
+    <main>
+        <div class="page-title">
+            <h1>Recursos del Projecte</h1>
+            <p>Eines, diagrames i materials complementaris</p>
+        </div>
+
+        <!-- Grid de recursos -->
+        <div class="card-grid">
+            <div class="card resource-card">
+                <div class="icon">🎨</div>
+                <h3>Prototip Figma</h3>
+                <p>Disseny de la interfície d'usuari i prototip interactiu del projecte.</p>
+                <!-- PLACEHOLDER: Substitueix # per l'enllaç real de Figma -->
+                <a href="#" class="btn btn-primary" target="_blank">Veure Prototip</a>
+            </div>
+
+            <div class="card resource-card">
+                <div class="icon">📐</div>
+                <h3>Diagrama de Cas d'Ús</h3>
+                <p>Visualització dels actors i casos d'ús principals del sistema.</p>
+                <button class="btn btn-primary" onclick="openModal('Images/DiagramaCasosDusTFG.drawio.pdf', 'Diagrama de Cas d\'Ús')">Veure Diagrama</button>
+            </div>
+
+            <div class="card resource-card">
+                <div class="icon">💻</div>
+                <h3>Repositori GitHub</h3>
+                <p>Codi font del projecte amb historial de versions i documentació tècnica.</p>
+                <!-- PLACEHOLDER: Substitueix # per l'enllaç real de GitHub -->
+                <a href="#" class="btn btn-primary" target="_blank">Veure Codi</a>
+            </div>
+
+            <div class="card resource-card">
+                <div class="icon">🎨</div>
+                <h3>Paleta de Colors</h3>
+                <p>Colors corporatius i guia d'estil visual del projecte.</p>
+                <button class="btn btn-primary" onclick="openModal('Images/PaletaDeColorsTFGBona.png', 'Paleta de Colors')">Veure Paleta</button>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Modal per visualitzar imatges -->
+    <div id="imageModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalTitle">Títol</h3>
+                <button class="modal-close" onclick="closeModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <img id="modalImage" src="" alt="Recurs">
+            </div>
+            <div class="modal-footer">
+                <a id="modalFullscreen" href="#" target="_blank" class="btn btn-secondary">Obrir en pantalla completa</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>TFG Dossier - Alba Colomer © 2025</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

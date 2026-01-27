@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TFG Dossier - Alba Colomer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header amb navegació -->
+    <header>
+        <nav>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul id="nav-menu">
+                <li><a href="index.html" class="active">Inici</a></li>
+                <li><a href="resum.html">Resum</a></li>
+                <li><a href="recursos.html">Recursos</a></li>
+                <li><a href="informes.html">Informes</a></li>
+                <li><a href="demo.html">Demo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contingut principal -->
+    <main>
+        <!-- Secció Hero - Presentació -->
+        <section class="hero">
+            <div class="hero-content">
+                <!-- Columna esquerra: Foto i autor -->
+                <div class="hero-left">
+                    <div class="avatar">
+                        <img src="Images/fotoperfil.jpg" alt="Alba Colomer">
+                    </div>
+                    <div class="autor-info">
+                        <h3>Alba Colomer</h3>
+                        <p>Estudiant d'Enginyeria Informàtica</p>
+                    </div>
+                </div>
+
+                <!-- Columna dreta: Informació del projecte -->
+                <div class="hero-right">
+                    <span class="badge">Treball Final de Grau</span>
+                    <h1>Som Local</h1>
+                    <p class="subtitle">Aplicació mòbil per fomentar el comerç local de proximitat</p>
+
+                    <div class="hero-description">
+                        <p>
+                            Aquest projecte presenta <strong>Som Local</strong>,
+                            una aplicació mòbil per donar visibilitat als comerços de proximitat
+                            i facilitar la connexió entre botigues i ciutadans.
+                        </p>
+                        <p>
+                            Neix d'una motivació personal i social: ajudar el petit comerç
+                            a adaptar-se al món digital i reforçar el teixit local.
+                        </p>
+                    </div>
+
+                    <div class="hero-meta">
+                        <div class="meta-item">
+                            <span class="meta-icon">🎓</span>
+                            <span>Grau en Enginyeria Informàtica (UAB)</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-icon">👨‍🏫</span>
+                            <span>Tutor: Marc Talló</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seccions d'accés ràpid -->
+        <div class="card-grid">
+            <div class="card">
+                <h2>📄 Resum del Projecte</h2>
+                <p>Llegeix el resum del TFG en català, castellà o anglès.</p>
+                <a href="resum.html" class="btn btn-primary">Veure Resum</a>
+            </div>
+
+            <div class="card">
+                <h2>🔗 Recursos</h2>
+                <p>Accedeix al prototip, diagrames i repositori del projecte.</p>
+                <a href="recursos.html" class="btn btn-primary">Veure Recursos</a>
+            </div>
+
+            <div class="card">
+                <h2>📋 Informes</h2>
+                <p>Consulta tots els informes del projecte i la llista de canvis.</p>
+                <a href="informes.html" class="btn btn-primary">Veure Informes</a>
+            </div>
+
+            <div class="card">
+                <h2>🎬 Demo</h2>
+                <p>Mira la demostració del projecte en funcionament.</p>
+                <a href="demo.html" class="btn btn-primary">Veure Demo</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>TFG Dossier - Alba Colomer © 2025</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
