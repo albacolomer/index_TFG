@@ -218,6 +218,11 @@ main {
     opacity: 0.85;
 }
 
+.uab-logo {
+    width: 140px;
+    margin-top: 20px;
+}
+
 /* Hero responsive */
 @media (max-width: 768px) {
     .hero {
