@@ -298,6 +298,42 @@ main {
     gap: 25px;
 }
 
+.card-grid-centered {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.card-grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card-grid-4 .card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card-grid-4 .card .btn {
+    margin-top: auto;
+    text-align: center;
+}
+
+@media (max-width: 900px) {
+    .card-grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .card-grid-4 {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* ===== Buttons ===== */
 .btn {
     display: inline-block;
